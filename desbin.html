@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desa Binaan</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<ul>
+				<li><a href="#tentang" class="btn"><b>Tentang Kami</b></a></li>
+                <li><a href="#program" class="btn"><b>Program Desbin</b></a></li>
+				<li><a href="#artikel"><b>Artikel</b></a></li>
+				<li><a href="#galeri"><b>Galeri</b></a></li>
+			</ul>
+		</div>
+
+		
+	</header>
+
+
+	<div id="content">
+      <div class="judul" id="tentang">
+        <h1>Tentang Kami</h1>
+      </div>
+        <p class="tentang">Desa Binaan merupakan progam kerja Lisuma Gunadarma dengan mengambil tema "Wujud Pengabdian Mahasiswa kepada Masyarakat dengan Membawa Arti Penting Pendidikan dan Kesehatan". Kegiatan ini dilaksanakan pada 21-27 Agustus 2019 di Desa Cibunian, Bogor, Jawa Barat. Program kerja yang dilaksanakan antara lain, Forum Pemuda Desa, Pelayanan Sosial, Pengembangan Seni, dan Pendidikan.</p>
+
+ 
+      <div class="judul" id="program">
+        <h1>Program Desa Binaan</h1>
+      </div>
+        <p class="program">Ketik sesuatu pada kolom input dibawah ini untuk mencari program desa binaan pada tabel:</p>  
+        <input class="input" id="myInput" type="text" placeholder="Cari..">
+        <br><br>
+
+        <div align="center">
+        <table>
+          <thead>
+          <tr>
+            <th>No.</th>
+            <th>Masalah</th>
+            <th>Program</th>
+            <th>Rangkaian Kegiatan</th>
+            <th>Sasaran</th>
+          </tr>
+          </thead>
+          <tbody id="myTable">
+          <tr>
+            <td>1. </td>
+            <td>Rendahnya tingkat keaktifan pemuda desa</td>
+            <td>Forum Pemuda Desa</td>
+            <td>Pertemuan, diskusi sampai dengan pembentukan forum pemuda desa sebagai organisasi remaja tingkat RW serta dilibatkan dalam program lainnya seperti Bank Sampah</td>
+            <td>Pemuda Desa</td>
+          </tr>
+          <tr>
+            <td>2. </td>
+            <td>Rendahnya kesadaran masyrakat akan kesehatan</td>
+            <td>Pelayanan Sosial</td>
+            <td>Penyuluhan dan cek seputar; hipertensi, diabetes, dan asam urat. Selain itu dengan pembuatan Bank Sampah.</td>
+            <td>Masyarakat</td>
+          </tr>
+          <tr>
+            <td>3. </td>
+            <td>Rendahnya kualitas SDM dan pengembangan potensi diri</td>
+            <td>Pendidikan</td>
+            <td>Pelaksanaan kegiatan edukasi seperti baca tulis, belajar Bahasa Inggris, dan Ms. Office.</td>
+            <td>Anak-anak dan remaja</td>
+          </tr>
+          <tr>
+            <td>4. </td>
+            <td>Rendahnya kualitas SDM dan pengembangan potensi diri</td>
+            <td>Pengembangan Seni</td>
+            <td>Pelatihan seni tari dan puisi sampai dengan menampilkan pentas seni di malam puncak penutupan acara.</td>
+            <td>Anak-anak dan remaja</td>
+          </tr>
+          </tbody>
+        </table>
+          </div>
+
+  
+
+    <div class="judul" id="artikel">
+        <h1>Artikel</h1>
+      </div>
+
+<div class="row">
+ <div class="column">
+     	<p>
+     		Hai, sahabat mahasiswa. Masih ingat Tridarma perguruan tinggi?
+     	</p>
+     	<p class="text_content">
+     		Yap, satu diantaranya adalah pengabdian masyarakat. Nah, untuk mengaplikasikan pengabdian masyarakat, Lisuma Gunadarma membuat program kerja yang maha asyik, yaitu Desa Binaan atau biasa disebut Desbin. Desbin dilaksanakan pada tanggal 21-27 Agustus 2019 di Kampung Babakan Desa Cibunian, Kab. Bogor. Dengan kurun waktu 7 hari kita memiliki beberapa agenda yang diantaranya Mengajar dari tingkat SD sampai SMP, dari pelajaran formal hingga pengajian, sosialisasi dan penerapan Bank Sampah, dan beberapa game untuk adik-adik desa tercinta.
+     	</p>
+     	<p class="text_content">
+     		Teman-teman panitia mulai melakukan pengabdian dari pukul 05.00 sampai pukul 20.00, dimulai dari belanja untuk keperluan sarapan, mengajar, sosialisasi, dan ditutup dengan evaluasi panitia. Kami juga bekerja sama dengan pemerintah Kabupaten Bogor. Kenapa kami memilih fokus pada pendidikan dan kebersihan lingkungan? Karena menurut tim investigasi Lisuma Gunadarma,  
+     	</p>
+     </div>
+ 
+
+<div class="column">
+     	<p>
+     		 Desa setempat memang kekurangan tenaga pengajar dan masih kurang sadar akan bahaya membuang sampah sembarangan.
+     	</p>
+     	<p class="text_content">
+     		Benar prediksi kami, pas di hari H kegiatan kami sempat kewalahan masalah tenaga pengajar. Dengan agenda yang menumpuk dan erat dengan lelah di setiap harinya. Tentunya kami bekerja sama dengan aparat Desa dan Komunitas Bank Sampah. Untuk mengaplikasikan Bank Sampah, kami memberikan 6 tong sampah berukuran besar yang tersebar di 1 RW. Walaupun kegiatan ini masih banyak kekurangan, namu kami mengucapkan banyak terima kasih untuk semua elemen yang ikut mensukseskan program kerja ini. Untuk Semua yang mendukung, semoga hal-hal baik selalu menyertai kita.
+     	</p>
+     	<p class="text_content">
+     		Desbin juga berhasil menciptakan cerita yang sangat pantas untuk dikenang. Air mata, senyum, ceria, bahagia hingga hubungan asmara tertuang lepas di Desa Cibunian.
+     	</p>
+ </div>
+     </div>
+    </div>
+
+    <div class="judul" id="galeri">
+        <h1>Galeri</h1>
+    </div>
+    
+    <div class="row">
+    	<div class="column">
+    		<img src="img/empat.jpg" alt="mengajar"  width="625" height="425">
+    		<h4 id="empat">Apa yang dilakukan oleh kakak-kakak lisuma ini?</h4>
+    		<button type="button" onclick="foto1()">Baca Selengkapnya...</button>
+    		<script>
+    			function foto1(){
+    				document.getElementById("empat").innerHTML = "Kakak-kakak diatas foto bersama anak-anak desa Cibunian jenjang SMP dari kelas 1 sampai 3"
+    			}
+    		</script>
+    	</div>
+
+
+ 
+    	<div class="column">
+    		<img src="img/lima.jpg" alt="mengajar" width="625" height="425">
+    		<h4 id="lima">Apa yang dilakukan oleh kakak lisuma diatas?</h4>
+    		<button type="button" class="btn btn-secondary" onclick="foto2()">Baca Selengkapnya...</button>
+    		<script>
+    			function foto2(){
+    				document.getElementById("lima").innerHTML = "Nama kaka diatas adalah Kak Ridwan atau bisa dipanggil Kak fahrul. Kak Ridwan sedang mengajarkan cara menggunakan microsoft pada anak-anak SMP kelas 1-3"
+    			}
+    		</script>
+    	</div>
+
+    	<div class="row">
+    	<div class="column">
+    		<img src="img/tiga.jpg" alt="mengajar"  width="625" height="425">
+    		<h4 id="tiga">Kegiatan apa yang dilaksanakan diatas?</h4>
+    		<button type="button" onclick="foto3()">Baca Selengkapnya...</button>
+    		<script>
+    			function foto3(){
+    				document.getElementById("tiga").innerHTML = "Saat itu, anak-anak desa Cibunian dan kakak-kakak Lisuma sedang bermain di lapangan bersama. Kegiatan tersebut sangat seru dan menyenangkan karena bisa mengenal lebih dekat dan tentu diakhir sesi tidak lupa untuk berfoto."
+    			}
+    		</script>
+    	</div>
+
+
+    	<div class="column">
+    		<img src="img/delapan.jpg" alt="mengajar" width="625" height="425">
+    		<h4 id="delapan">Kira-kira mereka lagi ngapain ya?</h4>
+    		<button type="button" onclick="foto4()">Baca Selengkapnya...</button>
+    		<script>
+    			function foto4(){
+    				document.getElementById("delapan").innerHTML = "Kegiatan diatas tentunya adalah olahraga bersama. Dipandu oleh salah satu kakak lisuma. Hal ini bertujuan untuk menjaga kebugaran badan. Tentunya juga mengeluarkan racun yakni dari keringat karena kita banyak bergerak."
+    			}
+    		</script>
+    	</div>
+
+    	<div class="row">
+    	<div class="column">
+    		<img src="img/sepuluh.jpg" alt="mengajar"  width="625" height="425">
+    		<h4 id="sepuluh">Mereka lagi ngapain ya?</h4>
+    		<button type="button" onclick="foto5()">Baca Selengkapnya...</button>
+    		<script>
+    			function foto5(){
+    				document.getElementById("sepuluh").innerHTML = "Kakak-kakak Lisuma berkunjung ke setiap rumah warga dan menjalin tali silaturahmi. Kakak-kakak diatas sedang memberikan pengetahuan mengenai bank sampah dan himbauan untuk membuang sampah pada tempatnya serta menjaga kebersihan dan keindahan lingkungan."
+    			}
+    		</script>
+    	</div>
+
+
+    	<div class="column">
+    		<img src="img/dua.jpg" alt="mengajar" width="625" height="425">
+    		<h4 id="dua">Siapa ya kakak itu? Dia lagi ngapain ya?</h4>
+    		<button type="button" onclick="foto6()">Baca Selengkapnya...</button>
+    		<script>
+    			function foto6(){
+    				document.getElementById("dua").innerHTML = "Namanya Bang Opik. Dia merupakan Ketua Umum Lisuma Gunadarma periode 2019. Sebulan setelah melaksanakan desa binaan, kami kembali ke desa tersebut untuk memberikan tong sampah yang akan diletakkan di sekitar area desa. Hal ini merupakan keberlanjutan dari bank sampah."
+    			}
+    		</script>
+    	</div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
